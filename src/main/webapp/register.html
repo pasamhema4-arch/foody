@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FoodExpress - Sign Up</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#fc8019,#ffb347);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    width:420px;
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.container h2{
+    text-align:center;
+    color:#fc8019;
+    margin-bottom:25px;
+}
+
+.input-group{
+    margin-bottom:18px;
+}
+
+.input-group label{
+    display:block;
+    font-weight:600;
+    margin-bottom:6px;
+    color:#333;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+    outline:none;
+}
+
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus{
+    border-color:#fc8019;
+}
+
+textarea{
+    resize:none;
+    height:80px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    background:#fc8019;
+    color:white;
+    font-size:17px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#e66d00;
+}
+
+.login-link{
+    text-align:center;
+    margin-top:18px;
+}
+
+.login-link a{
+    color:#fc8019;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.login-link a:hover{
+    text-decoration:underline;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Create Account</h2>
+
+<form action="register" method="post">
+
+<div class="input-group">
+<label>Full Name</label>
+<input type="text" name="name" placeholder="Enter your name" required>
+</div>
+
+<div class="input-group">
+<label>Email ID</label>
+<input type="email" name="email" placeholder="Enter your email" required>
+</div>
+
+<div class="input-group">
+<label>Password</label>
+<input type="password" name="password" placeholder="Enter your password" required>
+</div>
+
+<div class="input-group">
+<label>Address</label>
+<textarea name="address" placeholder="Enter your address" required></textarea>
+</div>
+
+<div class="input-group">
+<label>Role</label>
+
+<select name="role" required>
+
+<option value="">-- Select Role --</option>
+
+<option value="Customer">Customer</option>
+
+<option value="Restaurant Admin">Restaurant Admin</option>
+
+<option value="Super Admin">Super Admin</option>
+
+</select>
+
+</div>
+
+<button type="submit">Register</button>
+
+</form>
+
+<div class="login-link">
+
+Already have an account?
+
+<a href="login.html">Sign In</a>
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login - FoodExpress</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#fc8019,#ffb347);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+.container{
+width:380px;
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.logo{
+text-align:center;
+font-size:32px;
+font-weight:bold;
+color:#fc8019;
+margin-bottom:10px;
+}
+
+h2{
+text-align:center;
+color:#fc8019;
+margin-bottom:25px;
+}
+.input-group{
+
+margin-bottom:20px;
+
+}
+
+label{
+
+display:block;
+margin-bottom:8px;
+font-weight:bold;
+color:#444;
+
+}
+
+input{
+
+width:100%;
+padding:12px;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:15px;
+outline:none;
+
+}
+
+input:focus{
+
+border:1px solid #fc8019;
+
+}
+
+button{
+
+width:100%;
+padding:13px;
+background:#fc8019;
+border:none;
+color:white;
+font-size:17px;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+
+}
+
+button:hover{
+
+background:#e66f00;
+
+}
+
+.signup{
+
+margin-top:20px;
+text-align:center;
+font-size:15px;
+
+}
+
+.signup a{
+
+text-decoration:none;
+color:#fc8019;
+font-weight:bold;
+
+}
+
+.signup a:hover{
+
+text-decoration:underline;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">FoodExpress</div>
+
+<h2>Login</h2>
+
+
+
+<form action="Login" method="post">
+
+    <div class="input-group">
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="input-group">
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Enter your password" required>
+    </div>
+
+    <button type="submit">Login</button>
+
+    <div class="signup">
+        Don't have an account?
+        <a href="register">Sign Up</a>
+    </div>
+
+</form>
+
+</div>
+
+</body>
+</html>
